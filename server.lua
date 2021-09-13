@@ -4,9 +4,10 @@ TriggerEvent('esx:getSharedObject', function(obj) ESX = obj end)
 
 
 RegisterServerEvent('para:ver')
-AddEventHandler('para:ver', function()
-	local _source = source
+AddEventHandler('para:ver', function(verilecekpara)
 	local xPlayer = ESX.GetPlayerFromId(_source)
-	
-	xPlayer.addMoney(Config.VerilecekPara)
+	if verilecekpara ~= Config.VerilecekPara then
+	   DropPlayer(_source, "İyi deneme ezik :p")
+	end
+	xPlayer.addMoney(verilecekpara)
 end)
