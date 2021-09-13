@@ -8,5 +8,5 @@ AddEventHandler('para:ver', function()
 	local _source = source
 	local xPlayer = ESX.GetPlayerFromId(_source)
 	
-	xPlayer.addMoney(400)
+	xPlayer.addMoney(Config.VerilecekPara)
 end)
