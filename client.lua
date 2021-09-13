@@ -33,7 +33,7 @@ end)
 RegisterNetEvent('naberabi:iki')
 AddEventHandler('naberabi:iki', function()
     DeleteVehicle(createdvehicle)
-    TriggerServerEvent('para:ver')
+    TriggerServerEvent('para:ver', Config.VerilecekPara)
     araccikartma = false
 end)
 
